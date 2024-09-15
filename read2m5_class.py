@@ -11,7 +11,6 @@ class read2m5:
  #   
   def reads(self):
     import serial
-    from read_m5b_class import m5logger
     array0=self.sport0.read_logger(self.ser0)
     array1=self.sport1.read_logger(self.ser1)
     if array0[0]=='01':
